@@ -1,3 +1,8 @@
+:root {
+  --colormask: rgba(0, 0, 0, 0.5);
+  --colormaskhover: rgba(255, 255, 255, 1);
+}
+
 /* Header */
 
 .wrapper {
@@ -104,11 +109,11 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1163px) {
   .wrapper {
+    max-width: none;
     margin: 0 auto;
     padding: 16px 32px;
-    max-width: 1100px;
     position: relative;
     z-index: 10000;
   }
@@ -203,19 +208,27 @@
   line-height: 1.25;
   color: #010027;
   background-color: #fff;
-  background-clip: padding-box;
   border: 1px solid #e8ecf3;
   border-radius: 99vh;
   box-shadow: inset 0 1px 1px rgb(1 0 39 / 8%);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: 400ms all;
+
   margin-left: auto;
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1164px) {
   .search-bar-desktop {
-    max-width: 500px;
+    max-width: 40%;
+    width: 300px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .search-bar-desktop {
+    max-width: 100%;
+    width: 500px;
+  }
+}
+
 .search-bar-desktop input {
   border: 0;
   outline: 0;
@@ -227,7 +240,7 @@
   outline: 0;
   background-color: transparent;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1163px) {
   .desktop-navigation {
     display: none;
   }
@@ -243,5 +256,107 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* Kafelki */
+.categories .wrapper {
+  max-width: none;
+}
+@media screen and (min-width: 1440px) {
+  .categories .wrapper {
+    max-width: 1440px;
+  }
+}
+.auto {
+  background-image: url(/src/images/Auto-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.auto:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.dla-domu {
+  background-image: url(/src/images/dla-domu-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.dla-domu:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.horeca {
+  background-image: url(/src/images/horeca-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.horeca:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: 300ms;
+}
+.przemysł-agro {
+  background-image: url(/src/images/przemysł-agro-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.przemysł-agro:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.medycyna-laboratoria {
+  background-image: url(/src/images/lab-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.medycyna-laboratoria:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.placówki-edukacyjne {
+  background-image: url(/src/images/school-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: top;
+}
+.placówki-edukacyjne:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.placówki-sportowe {
+  background-image: url(/src/images/gym-test.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.placówki-sportowe:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.placówki-edukacyjne:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
+  cursor: pointer;
+}
+.piekarnie-cukiernie {
+  background-image: url(/src/images/piekarnia-cukiernia-ciasta.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.piekarnie-cukiernie:hover {
+  background-color: rgba(255, 255, 255, 1);
+  background-position: center;
+}
+.firmy-sprzątające {
+  background-image: url(/src/images/cleaning-industry-test_1.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+.firmy-sprzątające:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 300ms;
   cursor: pointer;
 }
