@@ -1,6 +1,9 @@
 :root {
   --colormask: rgba(0, 0, 0, 0.5);
   --colormaskhover: rgba(255, 255, 255, 1);
+
+  --text-color-theme-light: black;
+  ---text-color-theme-dark: white;
 }
 
 /* Header */
@@ -362,7 +365,6 @@
   cursor: pointer;
 }
 .theme-changer-container {
-  background-color: red;
   width: 40px;
   border-radius: 99vh;
 }
@@ -371,8 +373,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: red;
-  border: 1px solid red;
   outline: 1px solid black;
   border-radius: 99vh;
   padding: 0;
@@ -400,9 +400,37 @@
   width: 16px;
   height: 16px;
   border-radius: 100%;
-  background-color: white;
   transition: 200ms ease-in-out;
+  background-color: black;
 }
 .theme-icon.active .fa-sun {
   display: none;
+}
+.theme-changer i {
+  color: white;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1164px) {
+  .theme-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .theme-changer-container {
+    width: 50px;
+    border-radius: 99vh;
+  }
+  .theme-changer.active .theme-icon {
+    transform: translateX(26px);
+  }
+  .theme-changer .theme-icon {
+    transform: translateX(0px);
+  }
+  .theme-changer i {
+    color: white;
+    font-size: 14px;
+  }
+}
+:root:has(.theme-changer.active) {
+  background-color: black;
 }
