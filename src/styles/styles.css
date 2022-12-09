@@ -20,6 +20,7 @@
 .icons {
   display: flex;
   list-style: none;
+  align-items: center;
   margin: 0;
   padding: 0;
   gap: 0.75rem;
@@ -359,4 +360,49 @@
   background-color: rgba(255, 255, 255, 1);
   transition: 300ms;
   cursor: pointer;
+}
+.theme-changer-container {
+  background-color: red;
+  width: 40px;
+  border-radius: 99vh;
+}
+.theme-changer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  border: 1px solid red;
+  outline: 1px solid black;
+  border-radius: 99vh;
+  padding: 0;
+}
+.theme-changer.active .theme-icon {
+  transform: translateX(24px);
+}
+.theme-changer .theme-icon {
+  transform: translateX(0px);
+}
+.theme-changer .fa-sun {
+  display: none;
+}
+.theme-changer.active .fa-sun {
+  display: block;
+}
+
+.theme-changer.active .fa-moon {
+  display: none;
+}
+.theme-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+.theme-icon.active .fa-sun {
+  display: none;
 }
