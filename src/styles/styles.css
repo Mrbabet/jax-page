@@ -1,12 +1,22 @@
 :root {
   --colormask: rgba(0, 0, 0, 0.5);
   --colormaskhover: rgba(255, 255, 255, 1);
-
-  --text-color-theme-light: black;
-  ---text-color-theme-dark: white;
+  --clr-body-bg: rgb(255, 255, 255);
+  --clr-text: black;
+  --clr-heading: hsl(0 0% 25%);
+  --clr-icon: black;
 }
 
 /* Header */
+
+body {
+  background: var(--clr-body-bg);
+}
+h1,
+p,
+span {
+  color: var(--clr-text);
+}
 
 .wrapper {
   padding: 16px 32px;
@@ -51,7 +61,7 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25;
-  color: #010027;
+  color: var(--clr-icon);
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #e8ecf3;
@@ -162,7 +172,7 @@
     color: black;
   }
   .icons i {
-    color: black;
+    color: var(--clr-icon);
     font-size: 24px;
   }
   .logo img {
@@ -432,5 +442,9 @@
   }
 }
 :root:has(.theme-changer.active) {
-  background-color: black;
+  --clr-body-bg: hsl(233deg 12% 13%);
+  --clr-text: white;
+  --clr-heading: hsl(209 50% 80%);
+  --clr-icon: white;
+  --clr-icon-slider: ;
 }
