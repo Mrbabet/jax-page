@@ -455,11 +455,11 @@ span {
 }
 :root:has(.theme-changer.active) {
   --clr-body-bg: hsl(233deg 12% 13%);
-  --clr-text: white;
+  --clr-text: rgb(187, 187, 187);
   --clr-heading: hsl(209 50% 80%);
-  --clr-icon: white;
+  --clr-icon: rgb(187, 187, 187);
   --clr-icon-slider: black;
-  --clr-slider-dot: white;
-  --clr-theme-outline: white;
+  --clr-slider-dot: rgb(187, 187, 187);
+  --clr-theme-outline: rgb(187, 187, 187);
   --clr-search-bar: #0d1117;
 }
