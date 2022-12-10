@@ -5,6 +5,10 @@
   --clr-text: black;
   --clr-heading: hsl(0 0% 25%);
   --clr-icon: black;
+  --clr-icon-slider: white;
+  --clr-slider-dot: black;
+  --clr-theme-outline: black;
+  --clr-search-bar: white;
 }
 
 /* Header */
@@ -62,13 +66,18 @@ span {
   font-weight: 400;
   line-height: 1.25;
   color: var(--clr-icon);
-  background-color: #fff;
+  background-color: var(--clr-search-bar);
   background-clip: padding-box;
-  border: 1px solid #e8ecf3;
+  border: 1px solid black;
   border-radius: 99vh;
-  box-shadow: inset 0 1px 1px rgb(1 0 39 / 8%);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
   margin-left: auto;
+}
+.search-bar input {
+  background-color: var(--clr-search-bar);
+}
+.search-bar i {
+  color: var(--clr-text);
 }
 .search-bar input {
   border: 0;
@@ -206,7 +215,7 @@ span {
 }
 .desktop-navigation ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--clr-text);
 }
 .search-bar-desktop {
   display: flex;
@@ -221,14 +230,17 @@ span {
   font-weight: 400;
   line-height: 1.25;
   color: #010027;
-  background-color: #fff;
-  border: 1px solid #e8ecf3;
+  background-color: var(--clr-search-bar);
+  border: 1px solid black;
   border-radius: 99vh;
   box-shadow: inset 0 1px 1px rgb(1 0 39 / 8%);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: 400ms all;
-
   margin-left: auto;
+}
+.search-bar-desktop input {
+  background-color: var(--clr-search-bar);
+}
+.search-bar-desktop i {
+  color: var(--clr-text);
 }
 @media screen and (min-width: 1164px) {
   .search-bar-desktop {
@@ -383,7 +395,7 @@ span {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  outline: 1px solid black;
+  outline: 1px solid var(--clr-theme-outline);
   border-radius: 99vh;
   padding: 0;
 }
@@ -411,13 +423,13 @@ span {
   height: 16px;
   border-radius: 100%;
   transition: 200ms ease-in-out;
-  background-color: black;
+  background-color: var(--clr-slider-dot);
 }
 .theme-icon.active .fa-sun {
   display: none;
 }
 .theme-changer i {
-  color: white;
+  color: var(--clr-icon-slider);
   font-size: 10px;
 }
 
@@ -437,7 +449,7 @@ span {
     transform: translateX(0px);
   }
   .theme-changer i {
-    color: white;
+    color: var(--clr-icon-slider);
     font-size: 14px;
   }
 }
@@ -446,5 +458,8 @@ span {
   --clr-text: white;
   --clr-heading: hsl(209 50% 80%);
   --clr-icon: white;
-  --clr-icon-slider: ;
+  --clr-icon-slider: black;
+  --clr-slider-dot: white;
+  --clr-theme-outline: white;
+  --clr-search-bar: #0d1117;
 }
