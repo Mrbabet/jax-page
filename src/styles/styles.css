@@ -277,11 +277,11 @@ span {
 /* Hero */
 .hero {
   display: block;
-  position: relative;
 }
 .hero ul {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 .hero .slide-1 {
   padding: 0;
@@ -295,10 +295,14 @@ span {
   background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
-  animation: opacity-changer 4s infinite ease-in-out;
+  animation: opacity-changer 12s infinite ease-in-out;
+  z-index: 1;
 }
 @keyframes opacity-changer {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
   }
   100% {
@@ -307,8 +311,9 @@ span {
 }
 .hero .slide-2 {
   position: absolute;
-  z-index: -2;
+  z-index: 3;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   display: block;
@@ -318,6 +323,18 @@ span {
   background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
+  animation: opacity-changer-2 12s infinite ease-in-out;
+}
+@keyframes opacity-changer-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Kafelki */
