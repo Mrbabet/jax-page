@@ -277,13 +277,70 @@ span {
 /* Hero */
 .hero {
   display: block;
+  position: relative;
+}
+.hero ul {
+  padding: 0;
+  margin: 0;
+}
+.hero .slide-1 {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
   background-image: url(../images/baner_podstrona.webp);
   aspect-ratio: calc(1920 / 625);
-  background-size: contain;
-  background-position: center center;
+  background-size: contain, contain;
+  background-position: center center, left;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation: opacity-changer 5s ease-in-out infinite;
+}
+@keyframes opacity-changer {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 0.875;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  37.5% {
+    opacity: 0.625;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  62.5% {
+    opacity: 0.375;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  87.5% {
+    opacity: 0.125;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.hero .slide-2 {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: url(/src/images/baner_2.webp);
+  aspect-ratio: calc(1920 / 625);
+  background-size: contain, contain;
+  background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
 /* Kafelki */
 .categories .wrapper {
   max-width: none;
