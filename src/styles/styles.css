@@ -295,32 +295,11 @@ span {
   background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
-  animation: opacity-changer 5s ease-in-out infinite;
+  animation: opacity-changer 4s infinite ease-in-out;
 }
 @keyframes opacity-changer {
   0% {
     opacity: 1;
-  }
-  12.5% {
-    opacity: 0.875;
-  }
-  25% {
-    opacity: 0.75;
-  }
-  37.5% {
-    opacity: 0.625;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  62.5% {
-    opacity: 0.375;
-  }
-  75% {
-    opacity: 0.25;
-  }
-  87.5% {
-    opacity: 0.125;
   }
   100% {
     opacity: 0;
