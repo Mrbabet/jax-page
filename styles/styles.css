@@ -295,13 +295,12 @@ span {
   background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
-  animation: opacity-changer 4s ease-in-out infinite;
+  animation: opacity-changer 2s infinite ease-in-out;
 }
 @keyframes opacity-changer {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
@@ -319,6 +318,17 @@ span {
   background-position: center center, left;
   background-repeat: no-repeat;
   cursor: pointer;
+  animation: opacity-changer-2 2s infinite ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes opacity-changer-2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Kafelki */
